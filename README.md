@@ -11,7 +11,7 @@ Le sapin est composé :
 - de deux enceintes stéréo diffusant une musique de Noël,
 - d’un montage soigné avec soudure, colle et perçage précis.
 
-🔗 **Site internet du projet** : [Voir le site internet de présentation](https://si-lpa.github.io/Projet-Sapin-de-Noel/index.html)
+🔗 **Site internet du projet** : [Voir le site internet de présentation](https://si-lpa.github.io/Projet-Sapin-de-Noel/index.html)<br>
 📁 **Fichiers du site internet** : https://github.com/si-lpa/Projet-Sapin-de-Noel/tree/site
 
 ## 🧠 Technologies utilisées
