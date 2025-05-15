@@ -35,8 +35,8 @@ Le sapin est composé :
 
 ## 📖 Documentation & Reproduction
 
-🔧 Pour refaire ce projet ou faire fonctionner celui existant :  
-➡️ Consultez le [Wiki du dépôt](../../wiki) pour accéder aux étapes de fabrication, de montage et de configuration du code.
+🔧 Pour faire fonctionner le projet :  
+➡️ Consultez le [Wiki du dépôt](../../wiki) pour accéder aux étapes de montage et de configuration du code.
 
 ## 👨‍👩‍👧‍👦 Équipe projet
 
