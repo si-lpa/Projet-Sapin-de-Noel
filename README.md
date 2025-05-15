@@ -27,7 +27,7 @@ Le sapin est composé :
 
 | Fichier / Dossier            | Description                                              |
 |------------------------------|----------------------------------------------------------|
-| `code_sapin.ino`             | Code Arduino pour les lumières et les enceintes          |
+| `ProgrammeArduinoSapin.ino`  | Code Arduino pour les lumières et les enceintes          |
 | `Pièce 1.SLDDRW`             | Fichier 2D pour la pièce 1 du sapin (découpe laser)      |
 | `Pièce 2.SLDDRW`             | Fichier 2D pour la pièce 2 du sapin (découpe laser)      |
 | `Sapin Modèle 3D.SLDASM`     | Fichier 3D pour un apperçu global du sapin               |
