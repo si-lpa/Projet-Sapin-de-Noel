@@ -33,7 +33,7 @@ Le sapin est composé :
 | `Sapin Modèle 3D.SLDASM`     | Fichier 3D pour un apperçu global du sapin               |
 | `README.md`                  | Ce fichier de présentation                               |
 
-## 📖 Documentation & Reproduction
+## 📖 Documentation
 
 🔧 Pour faire fonctionner le projet :  
 ➡️ Consultez le [Wiki du dépôt](../../wiki) pour accéder aux étapes de montage et de configuration du code.
