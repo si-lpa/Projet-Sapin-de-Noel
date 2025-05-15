@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jour 12 - Projet Sapin de Noël</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            background: var(--pico-background-color);
+        }
+
+        #theme-switch {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="secondary">Accueil</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary>Jour 12</summary>
+                        <ul dir="rtl">
+                            <li><a href="jour1.html">Jour 1</a></li>
+                            <li><a href="jour2.html">Jour 2</a></li>
+                            <li><a href="jour3.html">Jour 3</a></li>
+                            <li><a href="jour4.html">Jour 4</a></li>
+                            <li><a href="jour5.html">Jour 5</a></li>
+                            <li><a href="jour6.html">Jour 6</a></li>
+                            <li><a href="jour7.html">Jour 7</a></li>
+                            <li><a href="jour8.html">Jour 8</a></li>
+                            <li><a href="jour9.html">Jour 9</a></li>
+                            <li><a href="jour10.html">Jour 10</a></li>
+                            <li><a href="jour11.html">Jour 11</a></li>
+                            <li><a href="jour12.html">Jour 12</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="equipe.html" class="secondary">Équipe</a></li>
+                <li id="theme-switch"><i class="fa-solid fa-moon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div style="text-align:center">
+            <h1>Jour 12 : Finition du collage et fin du projet</h1>
+        </div>
+
+        <article>
+            <p>
+                Nous voici à la fin du projet, nous finissons le collage afin de rendre le projet entièrement fonctionnel.
+            </p>
+        </article>
+
+        <div class="grid">
+            <article>
+                <header><strong>Fin du collage</strong></header>
+                <p>Les câbles ont tous été collés, désormais ils sont bien rangés, et ne s'emmellent pas, le tout en rendant le résultat plus propre.</p>
+            </article>
+        </div>
+        <div class="grid">
+            <article>
+                <header><strong>Fin du projet</strong></header>
+                <p>Nous avons désormais fini le projet. Celui-ci nous a permis d'utiliser toutes les techniques et éléments suivants :</p>
+                <ul>
+                    <li>Modélisation 3D du sapin sur le logiciel SolidWorks</li>
+                    <li>Programmation en Arduino pour les lumières et les enceintes</li>
+                    <li>Découpage Laser pour découper le sapin</li>
+                    <li>Soudage pour les câbles des enceintes</li>
+                    <li>Mise en stéréo de deux enceintes en leur faisant jouer une musique</li>
+                    <li>Utilisation du pistolet à colle pour les câbles des lumières</li>
+                    <li>Manipulation de la perçeuse pour les trous des lumières</li>
+                    <li>Faire clignoter des LEDs (capteurs)</li>
+                    <li>Création d'un site internet / Communication</li>
+                    <li>Travail de groupe, répartition des tâches en fonction des compétences de chacun</li>
+                </ul>
+                <p>Ce projet nous aura permit d'utliser nos diverses connaissances et compétences accumulées en SI, et d'en faire un sapin qui pourra rendre compte des savoirs acquis en première, et de pouvoir les expliquer de manière ludique à des personnes, qui pourront alors comprendre le fonctionnement de chacun des éléments et de pouvoir poser des questions.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>© 2025 - Projet Sapin de Noël</p>
+    </footer>
+
+    <script>
+        let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        const themeSwitch = document.querySelector('#theme-switch');
+        const updateIcon = () => {
+            themeSwitch.innerHTML = `<i class="fa-solid fa-${theme === 'dark' ? 'moon' : 'sun'}"></i>`;
+        };
+
+        updateIcon();
+        themeSwitch.addEventListener('click', () => {
+            theme = theme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', theme);
+            document.documentElement.setAttribute('data-theme', theme);
+            updateIcon();
+        });
+    </script>
+
+</body>
+</html>
