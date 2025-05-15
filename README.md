@@ -12,6 +12,7 @@ Le sapin est composé :
 - d’un montage soigné avec soudure, colle et perçage précis.
 
 🔗 **Site internet du projet** : [Voir le site internet de présentation](https://si-lpa.github.io/Projet-Sapin-de-Noel/index.html)
+📁 **Fichiers du site internet** : https://github.com/si-lpa/Projet-Sapin-de-Noel/tree/site
 
 ## 🧠 Technologies utilisées
 
