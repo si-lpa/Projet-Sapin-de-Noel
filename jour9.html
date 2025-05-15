@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-9">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jour 9 - Projet Sapin de Noël</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.7.2/js/all.min.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        footer {
+            text-align: center;
+            padding: 0.5rem;
+            background: var(--pico-background-color);
+        }
+
+        #theme-switch {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <ul>
+                <li><a href="index.html" class="secondary">Accueil</a></li>
+            </ul>
+            <ul>
+                <li>
+                    <details class="dropdown">
+                        <summary>Jour 9</summary>
+                        <ul dir="rtl">
+                            <li><a href="jour1.html">Jour 1</a></li>
+                            <li><a href="jour2.html">Jour 2</a></li>
+                            <li><a href="jour3.html">Jour 3</a></li>
+                            <li><a href="jour4.html">Jour 4</a></li>
+                            <li><a href="jour5.html">Jour 5</a></li>
+                            <li><a href="jour6.html">Jour 6</a></li>
+                            <li><a href="jour7.html">Jour 7</a></li>
+                            <li><a href="jour8.html">Jour 8</a></li>
+                            <li><a href="jour9.html">Jour 9</a></li>
+                            <li><a href="jour10.html">Jour 10</a></li>
+                            <li><a href="jour11.html">Jour 11</a></li>
+                            <li><a href="jour12.html">Jour 12</a></li>
+                        </ul>
+                    </details>
+                </li>
+                <li><a href="equipe.html" class="secondary">Équipe</a></li>
+                <li id="theme-switch"><i class="fa-solid fa-moon"></i></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div style="text-align:center">
+            <h1>Jour 9 : Découpage du sapin et lancement des enceintes</h1>
+        </div>
+
+        <article>
+            <p>
+                Aujourd'hui, nous avons découpé le sapin et fait fonctionner les enceintes.
+            </p>
+        </article>
+
+        <div class="grid">
+            <article>
+                <header><strong>Découpage du sapin</strong></header>
+                <p>Ayant eu des soucis conernant l'imprimante laser, nous avons pu recommencer le découpage du sapin qui a fonctionné grâce à la réparation de la découpeuse laser.</p>
+            </article>
+            <article>
+                <header><strong>Lancement des enceintes</strong></header>
+                <p>Les enceintes font désormais de la musique, que nous pouvons lancer grâce à un bouton. Elles ne font que deux musiques mais nous souhaitons pouvoir mettre deux enceintes et davantage de musiques.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p>© 2025 - Projet Sapin de Noël</p>
+    </footer>
+
+    <script>
+        let theme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+
+        const themeSwitch = document.querySelector('#theme-switch');
+        const updateIcon = () => {
+            themeSwitch.innerHTML = `<i class="fa-solid fa-${theme === 'dark' ? 'moon' : 'sun'}"></i>`;
+        };
+
+        updateIcon();
+        themeSwitch.addEventListener('click', () => {
+            theme = theme === 'dark' ? 'light' : 'dark';
+            localStorage.setItem('theme', theme);
+            document.documentElement.setAttribute('data-theme', theme);
+            updateIcon();
+        });
+    </script>
+
+</body>
+</html>
