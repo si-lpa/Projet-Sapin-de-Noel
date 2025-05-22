@@ -1,3 +1,4 @@
+![banniere](https://github.com/user-attachments/assets/1c975669-3033-48da-9244-72555623ed6a)
 # 🎄 Sapin de Noël Illuminé
 
 Projet réalisé en classe de Première dans le cadre des Sciences de l’Ingénieur.  
